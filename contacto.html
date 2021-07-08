@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TECSUP contactos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="img/logo tecsup.png" alt="Logotipo de Bienes Raices" />
+                </a>
+
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="icono menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Carreras</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <!-- contenedor -->
+    </header>
+
+    <h1 class="fw-300 centrar-texto">Contacto</h1>
+    <img src="img/campus.jpg" height="500" width="1500" alt="" />
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
+
+        <form class="conctacto" action="">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Tu Nombre" />
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="Tu Correo Electronico" required />
+
+                <label for="telefono">Telefono: </label>
+                <input type="tel" id="telefono" placeholder="Tu Telefono" required />
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion sobre tipo de Contacto</legend>
+                <label for="opciones">Inscripcion o Informacion</label>
+                <select id="opciones">
+            <option value="" disabled selected>-- Seleccione --</option>
+            <option value="Compra">Inscripcion</option>
+            <option value="Vende">Informacion</option>
+          </select>
+
+                <label for="cantidad">Cantidad de Carreras que deses:</p> </label>
+                <p >(si selecciono informacion)</p>
+                <input type="number" min="1" max="3" step="1" />
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Como desea ser Contactado</p>
+                <div class="forma-contacto">
+                    <label for="telefono">Telefono </label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono" />
+
+                    <label for="correo">Email</label>
+                    <input type="radio" name="contacto" value="correo" id="correo" />
+                </div>
+
+                <p>Si eligio telefono, elija la fecha y la hora</p>
+                <label for="fecha">Fecha: </label>
+                <input type="date" name="" id="" />
+
+                <label for="hora">Hora: </label>
+                <input type="time" id="hora" min="09:00" max="18:00" />
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="boton-verde boton" />
+        </form>
+    </main>
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Carrera</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <p class="copyright">Todos los Derechos Reservados ami &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
